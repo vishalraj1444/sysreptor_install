@@ -49,12 +49,12 @@ apt-get install -y \
     xclip
 
 # --- 3. Install Docker if not already installed (from Kali repo) ---
-if ! command -v docker &>/dev/null; then
-    echo -e "${YELLOW}Docker not found. Installing Docker from Kali's repository...${RESET}"
+# if ! command -v docker &>/dev/null; then
+    echo -e "${YELLOW} Installing Docker from Kali's repository...${RESET}"
     apt-get install -y docker.io
-else
-    echo -e "${GREEN}Docker is already installed.${RESET}"
-fi
+# else
+#    echo -e "${GREEN}Docker is already installed.${RESET}"
+# fi
 
 # --- 4. Manually install Docker Compose v2 plugin ---
 echo "Manually installing Docker Compose v2 plugin..."
